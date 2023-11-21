@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LZzuKVQNEYoOVm94yPOc5uqMufFrIPxb9MILU2GqSdeBP7qGJpc+g1b6Ri5Eh8bSZ3nWKyKMSUQWQYqJrT3kiw==",
+  "dgSpecHash": "9XxbkcI59NUatOnPHNpvPfbdR5eOq5pm65C/CbNaR2je1CLkezRNXeXNUyFpBsd4p/wAniJU8VBwXfnX21ticQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp\\OneDrive\\Documents\\dotnet\\AspNetCore6WebAPIDeepDive\\Starter files\\CourseLibrary.API\\CourseLibrary.API.csproj",
+  "projectFilePath": "C:\\Users\\hp\\OneDrive\\Documents\\dotnet\\courseLibrary\\CourseLibrary.API\\CourseLibrary.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

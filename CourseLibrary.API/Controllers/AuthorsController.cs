@@ -25,7 +25,7 @@ public class AuthorsController : ControllerBase
 
     [HttpGet] 
     public async Task<ActionResult<IEnumerable<AuthorDto>>> GetAuthors()
-    { 
+    {
         // get authors from repo
         var authorsFromRepo = await _courseLibraryRepository
             .GetAuthorsAsync(); 

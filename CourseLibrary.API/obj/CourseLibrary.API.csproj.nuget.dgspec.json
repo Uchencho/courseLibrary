@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\OneDrive\\Documents\\dotnet\\AspNetCore6WebAPIDeepDive\\Starter files\\CourseLibrary.API\\CourseLibrary.API.csproj": {}
+    "C:\\Users\\hp\\OneDrive\\Documents\\dotnet\\courseLibrary\\CourseLibrary.API\\CourseLibrary.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\OneDrive\\Documents\\dotnet\\AspNetCore6WebAPIDeepDive\\Starter files\\CourseLibrary.API\\CourseLibrary.API.csproj": {
+    "C:\\Users\\hp\\OneDrive\\Documents\\dotnet\\courseLibrary\\CourseLibrary.API\\CourseLibrary.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\OneDrive\\Documents\\dotnet\\AspNetCore6WebAPIDeepDive\\Starter files\\CourseLibrary.API\\CourseLibrary.API.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\OneDrive\\Documents\\dotnet\\courseLibrary\\CourseLibrary.API\\CourseLibrary.API.csproj",
         "projectName": "CourseLibrary.API",
-        "projectPath": "C:\\Users\\hp\\OneDrive\\Documents\\dotnet\\AspNetCore6WebAPIDeepDive\\Starter files\\CourseLibrary.API\\CourseLibrary.API.csproj",
+        "projectPath": "C:\\Users\\hp\\OneDrive\\Documents\\dotnet\\courseLibrary\\CourseLibrary.API\\CourseLibrary.API.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\OneDrive\\Documents\\dotnet\\AspNetCore6WebAPIDeepDive\\Starter files\\CourseLibrary.API\\obj\\",
+        "outputPath": "C:\\Users\\hp\\OneDrive\\Documents\\dotnet\\courseLibrary\\CourseLibrary.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",

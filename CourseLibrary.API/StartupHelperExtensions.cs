@@ -1,6 +1,7 @@
 ﻿using CourseLibrary.API.DbContexts;
 using CourseLibrary.API.Services;
 using Microsoft.EntityFrameworkCore;
+using System.Net;
 
 namespace CourseLibrary.API;
 
@@ -30,7 +31,18 @@ internal static class StartupHelperExtensions
     { 
         if (app.Environment.IsDevelopment())
         {
-            app.UseDeveloperExceptionPage();
+            app.UseDeveloperExceptionPage(); // shows stacktrace to the client
+        } 
+        else
+        {
+            app.UseExceptionHandler(appbuilder =>
+            {
+                appbuilder.Run(async context =>
+                {
+                    context.Response.StatusCode = 500;
+                    await context.Response.WriteAsync("An unexpected error occurred. TRy again later");
+                });
+            });
         }
  
         app.UseAuthorization();
