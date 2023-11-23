@@ -22,6 +22,12 @@ namespace CourseLibrary.API.Controllers
                 throw new ArgumentNullException(nameof(mapper));
         }
 
+        //[HttpGet("({authorIds})")]
+        //public async Task<ActionResult<IEnumerable<AuthorForCreationDTO>>> GetAuthorCollection([FromRoute] IEnumerable<Guid> authorIds)
+        //{
+
+        //}
+
         [HttpPost]
         public async Task<ActionResult<IEnumerable<AuthorDto>>> CreateAuthorCollection(IEnumerable<AuthorForCreationDTO> authors)
         {
