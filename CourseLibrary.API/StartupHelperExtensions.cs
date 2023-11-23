@@ -10,7 +10,10 @@ internal static class StartupHelperExtensions
     // Add services to the container
     public static WebApplication ConfigureServices(this WebApplicationBuilder builder)
     {
-        builder.Services.AddControllers();
+        builder.Services.AddControllers(configure =>
+        {
+            configure.ReturnHttpNotAcceptable = true; // return 40 response when accept header is not supported
+        }).AddXmlDataContractSerializerFormatters();
 
         builder.Services.AddScoped<ICourseLibraryRepository, 
             CourseLibraryRepository>();
@@ -28,23 +31,32 @@ internal static class StartupHelperExtensions
 
     // Configure the request/response pipelien
     public static WebApplication ConfigurePipeline(this WebApplication app)
-    { 
-        if (app.Environment.IsDevelopment())
+    {
+        //if (app.Environment.IsDevelopment())
+        //{
+        //    app.UseDeveloperExceptionPage(); // shows stacktrace to the client
+        //} 
+        //else
+        //{
+        //    app.UseExceptionHandler(appbuilder =>
+        //    {
+        //        appbuilder.Run(async context =>
+        //        {
+        //            context.Response.StatusCode = 500;
+        //            await context.Response.WriteAsync("An unexpected error occurred. TRy again later");
+        //        });
+        //    });
+        //}
+
+        app.UseExceptionHandler(appbuilder =>
         {
-            app.UseDeveloperExceptionPage(); // shows stacktrace to the client
-        } 
-        else
-        {
-            app.UseExceptionHandler(appbuilder =>
+            appbuilder.Run(async context =>
             {
-                appbuilder.Run(async context =>
-                {
-                    context.Response.StatusCode = 500;
-                    await context.Response.WriteAsync("An unexpected error occurred. TRy again later");
-                });
+                context.Response.StatusCode = 500;
+                await context.Response.WriteAsync("An unexpected error occurred. TRy again later");
             });
-        }
- 
+        });
+
         app.UseAuthorization();
 
         app.MapControllers(); 
